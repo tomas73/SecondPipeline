@@ -1,5 +1,5 @@
 pipeline {
-         agent any
+         agent pul
          stages	{
                  stage('Build') {
                  		steps {
