@@ -11,6 +11,11 @@ pipeline {
 			     sh './hello'
 			     }
 		}
+		stage('Deliver') {
+			steps {
+			sh 'cp hello /tmp'
+			}
+		}
 		}
 	}
 		
