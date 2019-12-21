@@ -6,6 +6,11 @@ pipeline {
                      		      sh 'make all'
                  		      }
 				}
+		stage('Run') {
+			     steps {
+			     sh './hello'
+			     }
+		}
 		}
 	}
 		
