@@ -11,13 +11,13 @@ pipeline {
 		stage('RunHost') {
 			 	agent { label 'master' }
 			     steps {
-			     sh './hello'
+			     sh './hello.host'
 			     }
 		}
 		stage('Deliver') {
 		 	 	agent { label 'pul' }
 			steps {
-			sh 'cp hello /tmp'
+			sh 'cp hello.* /tmp'
 			}
 		}
 		}
